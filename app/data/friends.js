@@ -15,4 +15,5 @@ var friends = [
         1
       ]
   }
-  
+];
+module.exports = frieinds;
