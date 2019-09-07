@@ -35,9 +35,9 @@ module.exports = function(app) {
         var bfriendScore = friends[i].scores.reduce((a, b) => a + b, 0);
         console.log("Total friend score" + bfriendScore);
         totalDifference += Math.abs(sum-bfriendScore);
-        console.log("------------>") + totalDifference);
+        console.log("++++++++++++=====================>") + totalDifference);
 
-        if (totalDifference <= bestMatch.friendDifference) {
+        if(totalDifference <= bestMatch.friendDifference) {
             bestMatch.name = friends[i].name;
             bestMatch.photo = friends[i].photo;
             bestMatch.friiendDifference = totalDifference;
