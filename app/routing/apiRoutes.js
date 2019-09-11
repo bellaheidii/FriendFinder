@@ -28,7 +28,7 @@ module.exports = function(app) {
         console.log("Name:" + userName)
         console.log("User score" + userScores);
 
-        var sum = b .reduuce((a,b) => a + b , 0);
+        var sum = b .reduce((a,b) => a + b , 0);
         console.log("sums of users score" + sum );
         console.log("Best match friend diff" + bestMatch.friendDifference);
 
@@ -45,7 +45,7 @@ module.exports = function(app) {
         console.log(totalDifference + " Total Difference");
     }
     consolge.log(bestMatch);
-    friends.push(uuserData);
+    friends.push(userData);
     console.log("New User added");
     console.log(userData);
     res.json(bestMatch);
