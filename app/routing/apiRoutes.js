@@ -43,11 +43,16 @@ module.exports = function(app) {
         bestMatch.photo = currentFriend.photo;
         bestMatch.friendDifference = totalDifference;
       }
+      console.log(totalDifference + " Total Difference");
+
     }
+    console.log(bestMatch);
+
 
 
     friends.push(userData);
-
+    console.log("New user added");
+    console.log(userData);
     res.json(bestMatch);
   });
 };
